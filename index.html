@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Calculator</title>
+	<script type="text/javascript">
+		function calculate(x){
+			Calculator.nmbr.value = Calculator.nmbr.value +x;
+		}
+	</script>
+	<!-- rasheddiw@gmail.com -->
+</head>
+<body>
+	<div class="cal1">
+
+		<form action=""  name="Calculator">
+			<div class="cal2">
+				<input type="text" name="nmbr" placeholder="0" class="btn1st">
+			</div>
+			<div class="cal3">
+				<input type="button" name="btn" value="1" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="2" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="3" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="+" class="btn btnl" onclick="calculate(this.value)">
+				
+			</div>
+			<div class="cal3">
+				<input type="button" name="btn" value="4" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="5" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="6" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="-" class="btn btnl" onclick="calculate(this.value)">
+				
+			</div>
+			<div class="cal3">
+				<input type="button" name="btn" value="7" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="8" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="9" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="*" class="btn btnl" onclick="calculate(this.value)">
+				
+			</div>
+			<div class="cal3">
+				<input type="button" name="btn" value="0" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="00" class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="." class="btn" onclick="calculate(this.value)">
+				<input type="button" name="btn" value="/" class="btn btnl" onclick="calculate(this.value)">
+				
+			</div>
+			<div class="cal4">
+				<input type="button" name="btn" value="c" class="btnn" onclick="nmbr.value=null">
+				<input type="button" name="btn" value="=" class="btnn" onclick="nmbr.value=eval(nmbr.value)">
+				
+			</div>
+		</form>
+
+		
+	</div>
+
+</body>
+</html>
